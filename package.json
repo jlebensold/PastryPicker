@@ -2,6 +2,7 @@
   "name": "react-native-pastry-picker",
   "version": "1.0.0",
   "description": "Pastry Picker",
+  "repository": "https://github.com/jlebensold/react-native-pastry-picker",
   "main": "index.js",
   "scripts": {
     "test": " "
