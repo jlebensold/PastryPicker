@@ -1,0 +1,14 @@
+{
+  "name": "react-native-pastry-picker",
+  "version": "1.0.0",
+  "description": "Pastry Picker",
+  "main": "index.js",
+  "scripts": {
+    "test": " "
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Jon Lebensold",
+  "license": "MIT"
+}
