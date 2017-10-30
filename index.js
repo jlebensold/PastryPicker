@@ -1,1 +1,1 @@
-export { default as Picker } from './picker';
+export { default as PastryPicker } from './pastryPicker';
