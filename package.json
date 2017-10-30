@@ -1,6 +1,6 @@
 {
   "name": "react-native-pastry-picker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pastry Picker",
   "repository": "https://github.com/jlebensold/react-native-pastry-picker",
   "main": "index.js",
