@@ -8,10 +8,10 @@ import {
 } from 'react-native';
 
 const PASTRIES = {
-  croissant:  { label: "🥐  Croissant",   flour: 0.7, butter: 0.5, sugar: 0.2, eggs: 0 },
-  eclair:     { label: "🍪  Cookie",      flour: 0.5, butter: 0.4, sugar: 0.5, eggs: 0.2},
-  palmier:    { label: "🥞  Pancakes",    flour: 0.7, butter: 0.5, sugar: 0.3, eggs: 0.3 },
-  parisb:     { label: "🍩  Dougnuts",    flour: 0.5, butter: 0.2, sugar: 0.8, eggs: 0.1 },
+  croissant:    { label: "🥐  Croissants",   flour: 0.7, butter: 0.5, sugar: 0.2, eggs: 0 },
+  cookie:       { label: "🍪  Cookies",      flour: 0.5, butter: 0.4, sugar: 0.5, eggs: 0.2},
+  pancake:      { label: "🥞  Pancakes",     flour: 0.7, butter: 0.5, sugar: 0.3, eggs: 0.3 },
+  doughnut:     { label: "🍩  Dougnuts",     flour: 0.5, butter: 0.2, sugar: 0.8, eggs: 0.1 },
 }
 
 export default class PastryPicker extends Component {
@@ -24,6 +24,14 @@ export default class PastryPicker extends Component {
 
   setPastry = (selectedPastry) => {
     this.setState({ selectedPastry });
+  }
+
+  renderIngredient(backgroundColor, flex, label) {
+    return <View  style={styles.ingredientColumn}>
+      <View style={styles.bar} />
+      <View style={{ backgroundColor, flex }} />
+      <View style={styles.label}><Text>{label}</Text></View>
+      </View>
   }
 
   render() {
@@ -42,26 +50,10 @@ export default class PastryPicker extends Component {
           }
         </View>
       <View style={styles.ingredientContainer}>
-        <View  style={styles.ingredientColumn}>
-          <View style={styles.bar} />
-          <View style={{ backgroundColor: "#F2D8A6", flex: flour }} />
-          <View style={styles.label}><Text>Flour</Text></View>
-        </View>
-        <View  style={styles.ingredientColumn}>
-          <View style={styles.bar} />
-          <View style={{ backgroundColor: "#FFC049", flex: butter }} />
-          <View style={styles.label}><Text>Butter</Text></View>
-        </View>
-        <View  style={styles.ingredientColumn}>
-          <View style={styles.bar} />
-          <View style={{ backgroundColor: "#CACACA", flex: sugar }} />
-          <View style={styles.label}><Text>Sugar</Text></View>
-        </View>
-        <View  style={styles.ingredientColumn}>
-          <View style={styles.bar} />
-          <View style={{ backgroundColor: "#FFDE59", flex: eggs }} />
-          <View style={styles.label}><Text>Eggs</Text></View>
-        </View>
+        {this.renderIngredient("#F2D8A6", flour, "Flour")}
+        {this.renderIngredient("#FFC049", butter, "Butter")}
+        {this.renderIngredient("#CACACA", sugar, "Sugar")}
+        {this.renderIngredient("#FFDE59", eggs, "Eggs")}
       </View>
     </View>
   }
@@ -111,16 +103,4 @@ const styles = StyleSheet.create({
   label: {
     flex: 0.2,
   },
-  palmier: {
-    backgroundColor: "#F00",
-  },
-  croissant: {
-    backgroundColor: "#0F0",
-  },
-  eclair: {
-    backgroundColor: "#0FF",
-  },
-  parisb: {
-    backgroundColor: "#3F3",
-  }
 });

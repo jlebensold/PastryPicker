@@ -11,5 +11,8 @@
     "react-native"
   ],
   "author": "Jon Lebensold",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "react": "^16.0.0"
+  }
 }
