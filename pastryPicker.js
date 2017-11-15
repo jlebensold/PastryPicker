@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import {
-  Animated,
   StyleSheet,
-  Text,
-  TouchableHighlight,
   View,
 } from 'react-native';
+
+import IngredientBar from './ingredientBar'
+import PastryButton from './pastryButton'
 
 const PASTRIES = {
   croissant:    { label: "🥐  Croissants",   flour: 0.7, butter: 0.5, sugar: 0.2, eggs: 0 },
@@ -26,34 +26,22 @@ export default class PastryPicker extends Component {
     this.setState({ selectedPastry });
   }
 
-  renderIngredient(backgroundColor, flex, label) {
-    return <View  style={styles.ingredientColumn}>
-      <View style={styles.bar} />
-      <View style={{ backgroundColor, flex }} />
-      <View style={styles.label}><Text>{label}</Text></View>
-      </View>
-  }
-
   render() {
     const { flour, butter, sugar, eggs } = PASTRIES[this.state.selectedPastry];
     return <View style={styles.pastryPicker}>
         <View style={styles.buttons}>
           {
-            Object.keys(PASTRIES).map( (key) => <View key={key} style={styles.buttonContainer}>
-              <TouchableHighlight
-                style={[styles.button, {
-                  backgroundColor: key === this.state.selectedPastry ? "#CD7734" : "#54250B" }
-                ]} underlayColor={"#CD7734"} onPress={() => { this.setPastry(key) } }>
-                <Text style={styles.buttonText} >{PASTRIES[key].label}</Text>
-              </TouchableHighlight>
-            </View>)
+            Object.keys(PASTRIES).map( (key) => <PastryButton key={key}
+                isActive={this.state.selectedPastry === key}
+                onPress={() => { this.setPastry(key) } }
+                label={PASTRIES[key].label} /> )
           }
         </View>
       <View style={styles.ingredientContainer}>
-        {this.renderIngredient("#F2D8A6", flour, "Flour")}
-        {this.renderIngredient("#FFC049", butter, "Butter")}
-        {this.renderIngredient("#CACACA", sugar, "Sugar")}
-        {this.renderIngredient("#FFDE59", eggs, "Eggs")}
+        <IngredientBar backgroundColor="#F2D8A6" flex={flour} label="Flour" />
+        <IngredientBar backgroundColor="#FFC049" flex={butter} label="Butter" />
+        <IngredientBar backgroundColor="#CACACA" flex={sugar} label="Sugar" />
+        <IngredientBar backgroundColor="#FFDE59" flex={eggs} label="Eggs" />
       </View>
     </View>
   }
@@ -75,32 +63,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
   },
-  buttonContainer: {
-    margin: 10,
-  },
-  bar: {
-    alignSelf: 'flex-start',
-    flexGrow: 0,
-  },
-  button: {
-    padding: 10,
-    minWidth: 140,
-    justifyContent: 'center',
-    backgroundColor: "#5A8282",
-    borderRadius: 10,
-  },
-  buttonText: {
-    fontSize: 18,
-    color: "#FFF",
-  },
   buttons: {
     flexDirection: 'column',
     flexWrap: "wrap",
     paddingRight: 20,
     paddingLeft: 20,
     flex: 0.3,
-  },
-  label: {
-    flex: 0.2,
   },
 });
