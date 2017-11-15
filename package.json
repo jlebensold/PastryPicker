@@ -13,6 +13,7 @@
   "author": "Jon Lebensold",
   "license": "MIT",
   "devDependencies": {
+    "flow-bin": "^0.59.0",
     "react": "^16.0.0"
   },
   "dependencies": {

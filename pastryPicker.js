@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react';
 import {
   StyleSheet,
@@ -14,15 +15,21 @@ const PASTRIES = {
   doughnut:     { label: "🍩  Dougnuts",     flour: 0.5, butter: 0.2, sugar: 0.8, eggs: 0.1 },
 }
 
-export default class PastryPicker extends Component {
-  constructor(props) {
+type State = {
+  selectedPastry: string
+}
+
+export default class PastryPicker extends Component<{}, State> {
+  state: State
+
+  constructor(props: {}) {
     super(props);
     this.state = {
       selectedPastry: 'croissant'
     }
   }
 
-  setPastry = (selectedPastry) => {
+  setPastry = (selectedPastry: string) => {
     this.setState({ selectedPastry });
   }
 

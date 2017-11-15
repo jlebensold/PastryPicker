@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react';
 import {
   StyleSheet,
@@ -6,9 +7,17 @@ import {
   View,
 } from 'react-native';
 
-import PropTypes from 'prop-types'
+type Props = {
+  isActive?: bool,
+  label: string,
+  onPress: (key: string) => void
+}
 
-class PastryButton extends Component {
+export default class PastryButton extends Component<Props, void>{
+
+  static defaultProps = {
+    isActive: false
+  }
 
   render() {
     const { isActive, onPress, label} = this.props
@@ -22,18 +31,6 @@ class PastryButton extends Component {
   }
 
 }
-
-PastryButton.propTypes = {
-  isActive: PropTypes.bool,
-  label: PropTypes.string.isRequired,
-  onPress: PropTypes.func.isRequired,
-}
-
-PastryButton.defaultProps = {
-  isActive: false
-};
-
-export default PastryButton;
 
 const styles = StyleSheet.create({
   button: {

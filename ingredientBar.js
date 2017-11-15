@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react';
 import {
   Animated,
@@ -7,9 +8,14 @@ import {
   View,
 } from 'react-native';
 
-import PropTypes from 'prop-types'
 
-class IngredientBar extends Component {
+type Props = {
+  backgroundColor: string,
+  label: string,
+  flex: number
+}
+
+export default class IngredientBar extends Component<Props>{
 
   render() {
     const { backgroundColor, flex, label } = this.props;
@@ -21,14 +27,6 @@ class IngredientBar extends Component {
   }
 
 }
-
-IngredientBar.propTypes = {
-  backgroundColor: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  flex: PropTypes.number.isRequired,
-}
-
-export default IngredientBar;
 
 const styles = StyleSheet.create({
   ingredientColumn: {
