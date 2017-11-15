@@ -13,7 +13,7 @@ type Props = {
   onPress: (key: string) => void
 }
 
-export default class PastryButton extends Component<Props, void>{
+export default class PastryButton extends Component<Props>{
 
   static defaultProps = {
     isActive: false
