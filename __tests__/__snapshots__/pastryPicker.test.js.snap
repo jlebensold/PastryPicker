@@ -1,0 +1,439 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "column",
+      "margin": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 0.3,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "paddingLeft": 20,
+        "paddingRight": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "margin": 10,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Array [
+              Object {
+                "backgroundColor": "#5A8282",
+                "borderRadius": 10,
+                "justifyContent": "center",
+                "minWidth": 140,
+                "padding": 10,
+              },
+              Object {
+                "backgroundColor": "#CD7734",
+              },
+            ],
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#FFF",
+              "fontSize": 18,
+            }
+          }
+        >
+          🥐  Croissants
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "margin": 10,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Array [
+              Object {
+                "backgroundColor": "#5A8282",
+                "borderRadius": 10,
+                "justifyContent": "center",
+                "minWidth": 140,
+                "padding": 10,
+              },
+              Object {
+                "backgroundColor": "#54250B",
+              },
+            ],
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#FFF",
+              "fontSize": 18,
+            }
+          }
+        >
+          🍪  Cookies
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "margin": 10,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Array [
+              Object {
+                "backgroundColor": "#5A8282",
+                "borderRadius": 10,
+                "justifyContent": "center",
+                "minWidth": 140,
+                "padding": 10,
+              },
+              Object {
+                "backgroundColor": "#54250B",
+              },
+            ],
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#FFF",
+              "fontSize": 18,
+            }
+          }
+        >
+          🥞  Pancakes
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "margin": 10,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Array [
+              Object {
+                "backgroundColor": "#5A8282",
+                "borderRadius": 10,
+                "justifyContent": "center",
+                "minWidth": 140,
+                "padding": 10,
+              },
+              Object {
+                "backgroundColor": "#54250B",
+              },
+            ],
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#FFF",
+              "fontSize": 18,
+            }
+          }
+        >
+          🍩  Dougnuts
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-start",
+            "flexGrow": 0,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#F2D8A6",
+            "flex": 0.7,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 0.2,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          Flour
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-start",
+            "flexGrow": 0,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#FFC049",
+            "flex": 0.5,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 0.2,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          Butter
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-start",
+            "flexGrow": 0,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#CACACA",
+            "flex": 0.2,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 0.2,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          Sugar
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-start",
+            "flexGrow": 0,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#FFDE59",
+            "flex": 0,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 0.2,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          Eggs
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
