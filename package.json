@@ -1,6 +1,6 @@
 {
   "name": "react-native-pastry-picker",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Pastry Picker",
   "repository": "https://github.com/jlebensold/react-native-pastry-picker",
   "main": "index.js",
@@ -13,7 +13,6 @@
   "author": "Jon Lebensold",
   "license": "MIT",
   "devDependencies": {
-    "babel-preset-flow": "^6.23.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "flow-bin": "^0.59.0",
