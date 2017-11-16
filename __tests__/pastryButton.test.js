@@ -16,5 +16,6 @@ test('renders isActive', () => {
 test('isActive = false, background #5A8282', () => {
 	const button = shallow(
 		<PastryButton onPress={ (t) => {} } label="MyLabel" isActive={false} />);
-  expect(button.find('TouchableHighlight').props().style[0].backgroundColor).toEqual('#5A8282');
+  expect(button.find('TouchableHighlight').props().style[0].backgroundColor)
+    .toEqual('#5A8282');
 });
