@@ -11,6 +11,9 @@
     "react/jsx-filename-extension": [
       0
     ],
+    "import/no-extraneous-dependencies": [
+      "error", { "devDependencies": true  }
+    ],
     "flowtype/boolean-style": [
       2,
       "boolean"
