@@ -1,6 +1,6 @@
 {
   "name": "react-native-pastry-picker",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Pastry Picker",
   "repository": "https://github.com/jlebensold/react-native-pastry-picker",
   "main": "index.js",
@@ -13,17 +13,25 @@
   "author": "Jon Lebensold",
   "license": "MIT",
   "devDependencies": {
+    "babel-eslint": "^8.0.2",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
     "flow-bin": "^0.59.0",
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1",
-    "react": "^16.0.0",
     "react-dom": "^16.1.1",
-    "react-native": "^0.50.3",
     "react-test-renderer": "^16.1.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-native": "^0.50.3"
+	},
   "jest": {
     "preset": "react-native"
   }
